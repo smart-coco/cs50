@@ -1,0 +1,1 @@
+select name from songs where exists (select id from artists where artists.name='Post Malone' and artists.id=songs.artist_id)

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    quote
+{% endblock %}
+
+{% block main %}
+    <ul>
+        {% for item in show %}
+            <li>{{ show[item] }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
